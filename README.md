@@ -26,6 +26,8 @@ Users should be able to:
 
 Desktop design :
 ![image](https://github.com/NawalMalki/Challenge9/assets/114352448/dd7e84a4-1e28-4e14-8444-00122192b2ef)
+
+
 Mobile design :
 ![image](https://github.com/NawalMalki/Challenge9/assets/114352448/0380a45e-bb9a-4b6a-bc9e-56d4cfa39390)
 
