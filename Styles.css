@@ -1,0 +1,364 @@
+:root{
+    
+--SoftOrange: hsl(35, 77%, 62%); 
+--SoftRed: hsl(5, 85%, 63%); 
+--OffWhite: hsl(36, 100%, 99%) ; 
+--GrayishBlue: hsl(233, 8%, 79%);
+--DarkGrayishBlue: hsl(236, 13%, 42%);
+--VeryDarkBlue: hsl(240, 100%, 5%); 
+}
+
+@font-face {
+    font-family: Inter ;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* Customizing the scroll bar for my page */
+
+/* Apply styles to the entire scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track (the area behind the thumb) */
+  ::-webkit-scrollbar-track {
+    background: var(--OffWhite);
+  }
+  
+  /* Thumb (the draggable scrolling element) */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom ,hsl(5, 85%, 63%), hsl(35, 77%, 62%));
+  }
+
+
+body p{
+    font-size: 15px;
+}
+
+body{
+    z-index: 1;
+    font-family: Inter;
+    margin : 0;
+    padding : 0;
+    background-color: var(--OffWhite);
+   
+}
+
+
+/* Header styling */
+
+
+header .logo
+{
+height: fit-content;
+
+}
+
+header{
+    padding: 32px 70px 50px 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+header nav{
+    margin-left: 55%;
+}
+
+nav ul{
+    list-style : none; 
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+ul li{
+    margin-right: 20px;
+}
+
+
+li a{
+    text-decoration: none;
+    color: var(--DarkGrayishBlue);
+}
+
+ul li a:hover , .Side li a:hover{
+    color: var(--SoftRed);
+    cursor: pointer;
+}
+
+
+
+.Side{
+    background-color: var(--OffWhite); 
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 30%;
+    display: none;
+    
+    
+    
+}
+
+.Side .hide{
+    float: right;
+    margin : 20px 30px 20px 0px ; 
+    background-color: var(--OffWhite);
+    padding: 0;
+    width: fit-content;
+}
+
+
+.Side .hide:hover{
+    background-color: var(--OffWhite);
+    cursor: pointer;
+    
+}
+
+
+.Side ul{
+    list-style:none ; 
+    margin-top: 120px;
+    padding-left: 20px;
+    
+}
+
+
+.Side ul li{
+    margin-bottom: 20px;
+    
+}
+
+
+
+/* First section styling */
+
+
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+   
+}
+
+
+.item1{
+    
+    width: 50%;
+    margin-left: 120px;
+}
+
+.sous-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.sous-item h1{
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.sous-item p{
+    color: var(--DarkGrayishBlue);
+    
+    
+}
+
+.sous-sous{
+    margin-left: 100px;
+
+}
+
+
+.item1 .main-img{
+    width: 100%;
+}
+
+button:not(.menu){
+    background-color: var(--SoftRed);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.4mm;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+}
+
+button:not(.menu):hover {
+    cursor: pointer;
+    background-color: var(--VeryDarkBlue);
+}
+
+
+
+.item2{
+    
+    width: 25%;
+    margin-left: 45px;
+    background-color: var(--VeryDarkBlue);
+    color: white;
+    padding: 15px;
+}
+
+hr {
+    border: none; 
+    border-top: 1px solid var(--GrayishBlue); 
+}
+
+
+
+.item2 h1{
+    color: var(--SoftOrange);
+    font-size: 30px;
+}
+
+.big{
+    font-weight: bolder;
+    
+}
+
+
+ .big:hover{
+    color: var(--SoftOrange);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 2 styling */
+.section2{
+    display: flex;
+    flex-direction: row;
+    
+    height: fit-content;
+    padding: 60px 100px 30px 100px;
+    
+}
+
+
+.same{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 40px;
+    height: fit-content;
+   
+}
+
+.same  img{
+    width: 80px;
+    height: 120px ; 
+    margin-right: 15px;
+}
+
+
+.grayish{
+    color: var(--GrayishBlue);
+    font-size: 30px;
+    font-weight: bold;
+    margin: -5px 0 0 0 ;
+}
+
+
+/* Menu icon */
+
+.menu{
+    border: none;
+    background-color: var(--OffWhite); 
+    display: none;
+}
+
+
+.menu img {
+    height: 35px;
+    width: 35px;
+    
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media(max-width:375px){
+header{
+    padding: 15px;
+}
+nav{
+    display: none;
+}
+.menu {
+    display: inline;
+   margin-left: 70%;
+}
+
+
+
+
+
+/* Section 1 styling */
+.section1{
+    
+    padding: 10px;
+}
+
+.item1{
+    width: 100%;
+    margin: auto;
+}
+.sous-item{
+    flex-direction: column;
+}
+
+.sous-sous{
+    margin: auto;
+}
+
+.item2{
+    width: 100%;
+    margin: 30px auto;
+}
+
+
+.section2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.same{
+    width: 100%;
+}
+
+
+
+
+}
+
