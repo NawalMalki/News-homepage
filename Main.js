@@ -1,12 +1,12 @@
-var Icon = document.querySelector(".menu");
-var Show = document.querySelector(".Side");
-var Hide = document.querySelector(".hide"); 
+const hamburgerToggle = document.querySelector(".menu");
+const mobileNav = document.querySelector(".Side");
+const Hide = document.querySelector(".hide"); 
 
-Icon.addEventListener("click", function () {
-    Show.style.display = "block";
+hamburgerToggle.addEventListener("click", function () {
+    mobileNav.style.display = "block";
 });
 
 
 Hide.addEventListener("click" , function(){
-    Show.style.display = "none"; 
+    mobileNav.style.display = "none"; 
 })

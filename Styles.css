@@ -306,6 +306,10 @@ hr {
 
 /* Responsive design */
 @media(max-width:375px){
+
+    ::-webkit-scrollbar {
+        width: 0px;
+      }
 header{
     padding: 15px;
 }
