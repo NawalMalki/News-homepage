@@ -458,10 +458,18 @@ nav{
 .section1{
     
     padding-top: 20px;
+
+}
+
+
+
+
+.section1 .main-img{
+    width: 300px;
 }
 
 .item1{
-    width: 100%;
+    width: inherit; 
     margin: 0;
 }
 .sous-item{
@@ -474,8 +482,9 @@ nav{
 }
 
 .item2{
-    width: 330px;
-    margin: 0;
+    width: 100%;
+    margin-left: 0;
+    padding: 40px;
 }
 
 
