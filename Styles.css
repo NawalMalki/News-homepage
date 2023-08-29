@@ -457,15 +457,16 @@ nav{
 /* Section 1 styling */
 .section1{
     
-    padding: 10px;
+    padding-top: 20px;
 }
 
 .item1{
     width: 100%;
-    margin: auto;
+    margin: 0;
 }
 .sous-item{
     flex-direction: column;
+    width: 100%;
 }
 
 .sous-sous{
@@ -473,8 +474,8 @@ nav{
 }
 
 .item2{
-    width: 100%;
-    margin: 30px auto;
+    width: 330px;
+    margin: 0;
 }
 
 
